@@ -7,11 +7,15 @@
 	// value is the value you want to insert into Desmos when the key is active
 	// state is for internal use
 	const KEYS = [
-		{key: 'Digit1', value: '1', state: false},
-		{key: 'Digit2', value: '2', state: false},
-		{key: 'Digit3', value: '3', state: false},
-		{key: 'Digit4', value: '4', state: false},
-		{key: 'Digit5', value: '5', state: false},
+		{key: 'KeyF', value: '1', state: false},
+		{key: 'KeyG', value: '2', state: false},
+		{key: 'KeyH', value: '3', state: false},
+		{key: 'KeyJ', value: '4', state: false},
+		
+		{key: 'ArrowLeft', value: '1', state: false},
+		{key: 'ArrowDown', value: '2', state: false},
+		{key: 'ArrowUp', value: '3', state: false},
+		{key: 'ArrowRight', value: '4', state: false},
 	];
 	
 	let keyListID = captureVar(LIST_NAME);
@@ -45,7 +49,7 @@
 			setVar(
 				keyListID,
 				LIST_NAME,
-				String.raw`\left[0\right]`
+				String.raw`\left[1,2,3,4,\right]`
 			);
 		}
 		
